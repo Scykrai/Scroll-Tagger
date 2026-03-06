@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "scroll-tagger"
+version = "1.0.0"
+description = "Extract Scryfall Card Tags and their associated cards into an AI training dataset"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.31.0",
+]
+
+[project.scripts]
+scroll-tagger = "scroll_tagger.extract_tags:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["scroll_tagger*"]

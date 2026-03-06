@@ -48,9 +48,9 @@ import time
 from pathlib import Path
 from typing import Any
 
-from output_writer import OutputWriter
-from scryfall_client import ScryfallClient
-from tagger_client import TaggerClient
+from scroll_tagger.output_writer import OutputWriter
+from scroll_tagger.scryfall_client import ScryfallClient
+from scroll_tagger.tagger_client import TaggerClient
 
 # Namespaces that indicate this is NOT a pure card tag.
 # Scryfall Tagger uses 'art' for artwork tags and 'print' for printing tags.
