@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.pyo
+*.progress.json
+card_tags_dataset.txt
+*.txt.progress.json
+.env
